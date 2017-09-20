@@ -3,7 +3,7 @@
     "name": "ibiclou",
     "description": "Ibiclou helps you find free bikes around you and see where you can take one or drop one off.",
     "slug": "ibiclou",
-    "privacy": "unlisted",
+    "privacy": "public",
     "sdkVersion": "20.0.0",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,14 +11,22 @@
     "icon": "./assets/icons/app.png",
     "loading": {
       "icon": "./assets/icons/loading.png",
-      "backgroundColor": "#617ADD",
-      "hideExponentText": false
+      "backgroundColor": "#617ADD"
     },
     "packagerOpts": {
       "assetExts": ["ttf", "mp4"]
     },
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.ibiclou.app",
+      "permissions": ["ACCESS_FINE_LOCATION"],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBI9utjQ0UsWNFp6gUUm_pTvqYxjIBNtEQ"
+        }
+      }
     }
   }
 }
